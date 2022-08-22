@@ -1,0 +1,159 @@
+body{
+  display: flex;
+  margin:0;
+  padding:0;
+  background-color: #ebebeb;
+  overflow: hidden;
+  margin: 0;
+}
+:root{
+  font-size: 16px;
+  --transition-speed: 600ms;
+  font-family: 'Fira Sans', sans-serif;
+}
+.zero{ 
+  width: 100%;
+  background: transparent; 
+  color: #fff; 
+  display: flex;
+  transition: all 0.2 linear;
+  flex-direction: row;
+  height: 100vh;
+  margin: 0;
+  flex-grow: 1;
+}
+.friends{
+  border-radius: 10px;
+  flex-basis: 29%;
+  background: purple;
+  transition: all 650ms;
+  display: block;
+}
+.profile{
+  border-radius: 10px;
+  flex-basis: 29%;
+  background: green;
+  transition: all 650ms;
+  display: none;
+ 
+}
+.chat{
+  border-radius: 10px;
+  flex-basis: 65%;
+  background: #ff7979;
+}
+/*----------MENU NAVIGARION SLIDER----------*/
+.navbar{
+  flex-basis: 6%;
+  background: rgb(12,44,127);
+  background: linear-gradient(4deg, rgba(12,44,127,1) 0%, rgba(32,17,74,1) 100%);
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  height: 100vh;
+  padding-left: 1.5%;
+} 
+.navbar-nav{
+  /*display: flex;*/
+  height: 100%;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.navbar .nav-link{
+  margin-right:5%;
+  cursor: pointer;
+  width:40px;
+  font-size: 25px;
+  padding: 10px;
+}
+.navbar .nav-item:last-child {
+  margin-top: auto;
+}
+.nav-link{
+  margin-left: -20%;
+  /*display: flex;*/
+  height: 5rem;
+  text-decoration: none;
+  transition: var(--transition-speed);
+  color: rgb(171, 168, 168);
+}
+a:hover{
+  color: white;
+}
+/* Small screens */
+@media only screen and (max-width: 600px) {
+  .friends{
+    display:none;
+    z-index: 0;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: purple;
+    display: none;
+  }
+  .profile{
+    display:none;
+    z-index: 0;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: green;
+    display: none;
+  }
+  .chat{
+    z-index: -1;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+  }
+  .navbar{
+    z-index: 1;
+    width: 100vw;
+    height: 5rem;
+    border-radius: 0%;
+    max-width: 100%;
+    position: fixed;
+    margin: 0;
+  }
+  .navbar-nav {
+    flex-direction: row;
+    border-radius: 0%;
+    margin-left: auto;
+    justify-content: center;
+    margin-right: auto;
+  }
+  .nav-item{
+    flex-direction: row;
+    border-radius: 0%;
+    align-items: center;
+    justify-content: center;
+    margin-left:15%;
+  }
+  .navbar .nav-item:last-child {
+    margin-top: 0;
+  }
+}
+/* Large screens */
+@media only screen and (min-width: 600px) {
+  .navbar {
+    top: 0;
+    height: 100vh;
+  }
+}
+/*-----THEMES DARK/LIGHT-------*/
+.dark-mode{
+    background-color: rgb(40, 39, 39);
+}
+.dark-mode .navbar{
+  box-shadow: none;
+  background: rgb(12,44,127);
+  background: linear-gradient(4deg, rgba(12,44,127,1) 0%, rgba(32,17,74,1) 100%);
+}
+.dark-mode .nav-link{
+  color: #aba8a8;
+}
+.dark-mode .nav-link:hover{
+  color: rgb(255, 255, 255);
+}
+/*-------------------------------------CHAT AREA-----------------------------------------------*/
+

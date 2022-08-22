@@ -1,0 +1,1486 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Login</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="login.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+</head>
+<body>
+    <!--BACKGROUND ROWS OF ICONS, SO MANY ROWS...30 IN TOTAL-->          
+    <section> 
+        <div class="box">
+            <div class="header">
+                <h2>Welcome to VIEWME</h2>
+                <h3>Login</h3>
+                <input type="text" placeholder="Username" id="userInp">
+                <input type="password" placeholder="Password" id="passInp">
+                <div class="checkbox">
+                    <input type="checkbox" id="customSwitch1">
+                    <label for="customSwitch1">Keep Me Logged In</label>
+                </div>
+                <button type="text" id="sub_btn">Log In</button>
+                <a href="register.html" id="dugme2"></br>Want To Create New Account?</a>
+            </div>
+        </div>
+                </div>
+        <div class = "row">
+            <div>                   
+                <i class="fa fa-battery-full" aria-hidden="true"></i>
+                <i class="fa fa-superscript" aria-hidden="true"></i>
+                <i class="fa fa-line-chart" aria-hidden="true"></i>
+                <i class="fa fa-book" aria-hidden="true"></i>
+                <i class="fa fa-rocket" aria-hidden="true"></i>
+                <i class="fa fa-comments" aria-hidden="true"></i>
+                <i class="fa fa-hashtag" aria-hidden="true"></i>
+                <i class="fa fa-gamepad" aria-hidden="true"></i>
+                <i class="fa fa-home" aria-hidden="true"></i>
+                <i class="fa fa-music" aria-hidden="true"></i>
+                <i class="fa fa-smile" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+                <i class="fa fa-wifi" aria-hidden="true"></i>
+                <i class="fa fa-video-camera" aria-hidden="true"></i>
+                <i class="fa fa-users" aria-hidden="true"></i>
+                <i class="fa fa-globe" aria-hidden="true"></i>
+                <i class="fa fa-tag" aria-hidden="true"></i>
+                <i class="fa fa-usd" aria-hidden="true"></i>
+                <i class="fa fa-trophy" aria-hidden="true"></i>
+            </div>
+            <div>                   
+                <i class="fa fa-battery-full" aria-hidden="true"></i>
+                <i class="fa fa-superscript" aria-hidden="true"></i>
+                <i class="fa fa-line-chart" aria-hidden="true"></i>
+                <i class="fa fa-book" aria-hidden="true"></i>
+                <i class="fa fa-rocket" aria-hidden="true"></i>
+                <i class="fa fa-comments" aria-hidden="true"></i>
+                <i class="fa fa-hashtag" aria-hidden="true"></i>
+                <i class="fa fa-gamepad" aria-hidden="true"></i>
+                <i class="fa fa-home" aria-hidden="true"></i>
+                <i class="fa fa-music" aria-hidden="true"></i>
+                <i class="fa fa-smile" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+                <i class="fa fa-wifi" aria-hidden="true"></i>
+                <i class="fa fa-video-camera" aria-hidden="true"></i>
+                <i class="fa fa-users" aria-hidden="true"></i>
+                <i class="fa fa-globe" aria-hidden="true"></i>
+                <i class="fa fa-tag" aria-hidden="true"></i>
+                <i class="fa fa-usd" aria-hidden="true"></i>
+                <i class="fa fa-trophy" aria-hidden="true"></i>
+            </div>
+        </div>
+        <div class = "row">
+            <div>                   
+                <i class="fa fa-battery-full" aria-hidden="true"></i>
+                <i class="fa fa-superscript" aria-hidden="true"></i>
+                <i class="fa fa-line-chart" aria-hidden="true"></i>
+                <i class="fa fa-book" aria-hidden="true"></i>
+                <i class="fa fa-rocket" aria-hidden="true"></i>
+                <i class="fa fa-comments" aria-hidden="true"></i>
+                <i class="fa fa-hashtag" aria-hidden="true"></i>
+                <i class="fa fa-gamepad" aria-hidden="true"></i>
+                <i class="fa fa-home" aria-hidden="true"></i>
+                <i class="fa fa-music" aria-hidden="true"></i>
+                <i class="fa fa-smile" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+                <i class="fa fa-wifi" aria-hidden="true"></i>
+                <i class="fa fa-video-camera" aria-hidden="true"></i>
+                <i class="fa fa-users" aria-hidden="true"></i>
+                <i class="fa fa-globe" aria-hidden="true"></i>
+                <i class="fa fa-tag" aria-hidden="true"></i>
+                <i class="fa fa-usd" aria-hidden="true"></i>
+                <i class="fa fa-trophy" aria-hidden="true"></i>
+            </div>
+            <div>                   
+                <i class="fa fa-battery-full" aria-hidden="true"></i>
+                <i class="fa fa-superscript" aria-hidden="true"></i>
+                <i class="fa fa-line-chart" aria-hidden="true"></i>
+                <i class="fa fa-book" aria-hidden="true"></i>
+                <i class="fa fa-rocket" aria-hidden="true"></i>
+                <i class="fa fa-comments" aria-hidden="true"></i>
+                <i class="fa fa-hashtag" aria-hidden="true"></i>
+                <i class="fa fa-gamepad" aria-hidden="true"></i>
+                <i class="fa fa-home" aria-hidden="true"></i>
+                <i class="fa fa-music" aria-hidden="true"></i>
+                <i class="fa fa-smile" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+                <i class="fa fa-wifi" aria-hidden="true"></i>
+                <i class="fa fa-video-camera" aria-hidden="true"></i>
+                <i class="fa fa-users" aria-hidden="true"></i>
+                <i class="fa fa-globe" aria-hidden="true"></i>
+                <i class="fa fa-tag" aria-hidden="true"></i>
+                <i class="fa fa-usd" aria-hidden="true"></i>
+                <i class="fa fa-trophy" aria-hidden="true"></i>
+            </div>
+        </div>
+        <div class = "row">
+            <div>                   
+                <i class="fa fa-battery-full" aria-hidden="true"></i>
+                <i class="fa fa-superscript" aria-hidden="true"></i>
+                <i class="fa fa-line-chart" aria-hidden="true"></i>
+                <i class="fa fa-book" aria-hidden="true"></i>
+                <i class="fa fa-rocket" aria-hidden="true"></i>
+                <i class="fa fa-comments" aria-hidden="true"></i>
+                <i class="fa fa-hashtag" aria-hidden="true"></i>
+                <i class="fa fa-gamepad" aria-hidden="true"></i>
+                <i class="fa fa-home" aria-hidden="true"></i>
+                <i class="fa fa-music" aria-hidden="true"></i>
+                <i class="fa fa-smile" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+                <i class="fa fa-wifi" aria-hidden="true"></i>
+                <i class="fa fa-video-camera" aria-hidden="true"></i>
+                <i class="fa fa-users" aria-hidden="true"></i>
+                <i class="fa fa-globe" aria-hidden="true"></i>
+                <i class="fa fa-tag" aria-hidden="true"></i>
+                <i class="fa fa-usd" aria-hidden="true"></i>
+                <i class="fa fa-trophy" aria-hidden="true"></i>
+            </div>
+            <div>                   
+                <i class="fa fa-battery-full" aria-hidden="true"></i>
+                <i class="fa fa-superscript" aria-hidden="true"></i>
+                <i class="fa fa-line-chart" aria-hidden="true"></i>
+                <i class="fa fa-book" aria-hidden="true"></i>
+                <i class="fa fa-rocket" aria-hidden="true"></i>
+                <i class="fa fa-comments" aria-hidden="true"></i>
+                <i class="fa fa-hashtag" aria-hidden="true"></i>
+                <i class="fa fa-gamepad" aria-hidden="true"></i>
+                <i class="fa fa-home" aria-hidden="true"></i>
+                <i class="fa fa-music" aria-hidden="true"></i>
+                <i class="fa fa-smile" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+                <i class="fa fa-wifi" aria-hidden="true"></i>
+                <i class="fa fa-video-camera" aria-hidden="true"></i>
+                <i class="fa fa-users" aria-hidden="true"></i>
+                <i class="fa fa-globe" aria-hidden="true"></i>
+                <i class="fa fa-tag" aria-hidden="true"></i>
+                <i class="fa fa-usd" aria-hidden="true"></i>
+                <i class="fa fa-trophy" aria-hidden="true"></i>
+            </div>
+        </div>
+        <div class = "row">
+            <div>                   
+                <i class="fa fa-battery-full" aria-hidden="true"></i>
+                <i class="fa fa-superscript" aria-hidden="true"></i>
+                <i class="fa fa-line-chart" aria-hidden="true"></i>
+                <i class="fa fa-book" aria-hidden="true"></i>
+                <i class="fa fa-rocket" aria-hidden="true"></i>
+                <i class="fa fa-comments" aria-hidden="true"></i>
+                <i class="fa fa-hashtag" aria-hidden="true"></i>
+                <i class="fa fa-gamepad" aria-hidden="true"></i>
+                <i class="fa fa-home" aria-hidden="true"></i>
+                <i class="fa fa-music" aria-hidden="true"></i>
+                <i class="fa fa-smile" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+                <i class="fa fa-wifi" aria-hidden="true"></i>
+                <i class="fa fa-video-camera" aria-hidden="true"></i>
+                <i class="fa fa-users" aria-hidden="true"></i>
+                <i class="fa fa-globe" aria-hidden="true"></i>
+                <i class="fa fa-tag" aria-hidden="true"></i>
+                <i class="fa fa-usd" aria-hidden="true"></i>
+                <i class="fa fa-trophy" aria-hidden="true"></i>
+            </div>
+            <div>                   
+                <i class="fa fa-battery-full" aria-hidden="true"></i>
+                <i class="fa fa-superscript" aria-hidden="true"></i>
+                <i class="fa fa-line-chart" aria-hidden="true"></i>
+                <i class="fa fa-book" aria-hidden="true"></i>
+                <i class="fa fa-rocket" aria-hidden="true"></i>
+                <i class="fa fa-comments" aria-hidden="true"></i>
+                <i class="fa fa-hashtag" aria-hidden="true"></i>
+                <i class="fa fa-gamepad" aria-hidden="true"></i>
+                <i class="fa fa-home" aria-hidden="true"></i>
+                <i class="fa fa-music" aria-hidden="true"></i>
+                <i class="fa fa-smile" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+                <i class="fa fa-wifi" aria-hidden="true"></i>
+                <i class="fa fa-video-camera" aria-hidden="true"></i>
+                <i class="fa fa-users" aria-hidden="true"></i>
+                <i class="fa fa-globe" aria-hidden="true"></i>
+                <i class="fa fa-tag" aria-hidden="true"></i>
+                <i class="fa fa-usd" aria-hidden="true"></i>
+                <i class="fa fa-trophy" aria-hidden="true"></i>
+            </div>
+        </div>
+        <div class = "row">
+            <div>                   
+                <i class="fa fa-battery-full" aria-hidden="true"></i>
+                <i class="fa fa-superscript" aria-hidden="true"></i>
+                <i class="fa fa-line-chart" aria-hidden="true"></i>
+                <i class="fa fa-book" aria-hidden="true"></i>
+                <i class="fa fa-rocket" aria-hidden="true"></i>
+                <i class="fa fa-comments" aria-hidden="true"></i>
+                <i class="fa fa-hashtag" aria-hidden="true"></i>
+                <i class="fa fa-gamepad" aria-hidden="true"></i>
+                <i class="fa fa-home" aria-hidden="true"></i>
+                <i class="fa fa-music" aria-hidden="true"></i>
+                <i class="fa fa-smile" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+                <i class="fa fa-wifi" aria-hidden="true"></i>
+                <i class="fa fa-video-camera" aria-hidden="true"></i>
+                <i class="fa fa-users" aria-hidden="true"></i>
+                <i class="fa fa-globe" aria-hidden="true"></i>
+                <i class="fa fa-tag" aria-hidden="true"></i>
+                <i class="fa fa-usd" aria-hidden="true"></i>
+                <i class="fa fa-trophy" aria-hidden="true"></i>
+            </div>
+            <div>                   
+                <i class="fa fa-battery-full" aria-hidden="true"></i>
+                <i class="fa fa-superscript" aria-hidden="true"></i>
+                <i class="fa fa-line-chart" aria-hidden="true"></i>
+                <i class="fa fa-book" aria-hidden="true"></i>
+                <i class="fa fa-rocket" aria-hidden="true"></i>
+                <i class="fa fa-comments" aria-hidden="true"></i>
+                <i class="fa fa-hashtag" aria-hidden="true"></i>
+                <i class="fa fa-gamepad" aria-hidden="true"></i>
+                <i class="fa fa-home" aria-hidden="true"></i>
+                <i class="fa fa-music" aria-hidden="true"></i>
+                <i class="fa fa-smile" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+                <i class="fa fa-wifi" aria-hidden="true"></i>
+                <i class="fa fa-video-camera" aria-hidden="true"></i>
+                <i class="fa fa-users" aria-hidden="true"></i>
+                <i class="fa fa-globe" aria-hidden="true"></i>
+                <i class="fa fa-tag" aria-hidden="true"></i>
+                <i class="fa fa-usd" aria-hidden="true"></i>
+                <i class="fa fa-trophy" aria-hidden="true"></i>
+            </div>
+        </div>
+        <div class = "row">
+            <div>                   
+                <i class="fa fa-battery-full" aria-hidden="true"></i>
+                <i class="fa fa-superscript" aria-hidden="true"></i>
+                <i class="fa fa-line-chart" aria-hidden="true"></i>
+                <i class="fa fa-book" aria-hidden="true"></i>
+                <i class="fa fa-rocket" aria-hidden="true"></i>
+                <i class="fa fa-comments" aria-hidden="true"></i>
+                <i class="fa fa-hashtag" aria-hidden="true"></i>
+                <i class="fa fa-gamepad" aria-hidden="true"></i>
+                <i class="fa fa-home" aria-hidden="true"></i>
+                <i class="fa fa-music" aria-hidden="true"></i>
+                <i class="fa fa-smile" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+                <i class="fa fa-wifi" aria-hidden="true"></i>
+                <i class="fa fa-video-camera" aria-hidden="true"></i>
+                <i class="fa fa-users" aria-hidden="true"></i>
+                <i class="fa fa-globe" aria-hidden="true"></i>
+                <i class="fa fa-tag" aria-hidden="true"></i>
+                <i class="fa fa-usd" aria-hidden="true"></i>
+                <i class="fa fa-trophy" aria-hidden="true"></i>
+            </div>
+            <div>                   
+                <i class="fa fa-battery-full" aria-hidden="true"></i>
+                <i class="fa fa-superscript" aria-hidden="true"></i>
+                <i class="fa fa-line-chart" aria-hidden="true"></i>
+                <i class="fa fa-book" aria-hidden="true"></i>
+                <i class="fa fa-rocket" aria-hidden="true"></i>
+                <i class="fa fa-comments" aria-hidden="true"></i>
+                <i class="fa fa-hashtag" aria-hidden="true"></i>
+                <i class="fa fa-gamepad" aria-hidden="true"></i>
+                <i class="fa fa-home" aria-hidden="true"></i>
+                <i class="fa fa-music" aria-hidden="true"></i>
+                <i class="fa fa-smile" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+                <i class="fa fa-wifi" aria-hidden="true"></i>
+                <i class="fa fa-video-camera" aria-hidden="true"></i>
+                <i class="fa fa-users" aria-hidden="true"></i>
+                <i class="fa fa-globe" aria-hidden="true"></i>
+                <i class="fa fa-tag" aria-hidden="true"></i>
+                <i class="fa fa-usd" aria-hidden="true"></i>
+                <i class="fa fa-trophy" aria-hidden="true"></i>
+            </div>
+        </div>
+        <div class = "row">
+            <div>                   
+                <i class="fa fa-battery-full" aria-hidden="true"></i>
+                <i class="fa fa-superscript" aria-hidden="true"></i>
+                <i class="fa fa-line-chart" aria-hidden="true"></i>
+                <i class="fa fa-book" aria-hidden="true"></i>
+                <i class="fa fa-rocket" aria-hidden="true"></i>
+                <i class="fa fa-comments" aria-hidden="true"></i>
+                <i class="fa fa-hashtag" aria-hidden="true"></i>
+                <i class="fa fa-gamepad" aria-hidden="true"></i>
+                <i class="fa fa-home" aria-hidden="true"></i>
+                <i class="fa fa-music" aria-hidden="true"></i>
+                <i class="fa fa-smile" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+                <i class="fa fa-wifi" aria-hidden="true"></i>
+                <i class="fa fa-video-camera" aria-hidden="true"></i>
+                <i class="fa fa-users" aria-hidden="true"></i>
+                <i class="fa fa-globe" aria-hidden="true"></i>
+                <i class="fa fa-tag" aria-hidden="true"></i>
+                <i class="fa fa-usd" aria-hidden="true"></i>
+                <i class="fa fa-trophy" aria-hidden="true"></i>
+            </div>
+            <div>                   
+                <i class="fa fa-battery-full" aria-hidden="true"></i>
+                <i class="fa fa-superscript" aria-hidden="true"></i>
+                <i class="fa fa-line-chart" aria-hidden="true"></i>
+                <i class="fa fa-book" aria-hidden="true"></i>
+                <i class="fa fa-rocket" aria-hidden="true"></i>
+                <i class="fa fa-comments" aria-hidden="true"></i>
+                <i class="fa fa-hashtag" aria-hidden="true"></i>
+                <i class="fa fa-gamepad" aria-hidden="true"></i>
+                <i class="fa fa-home" aria-hidden="true"></i>
+                <i class="fa fa-music" aria-hidden="true"></i>
+                <i class="fa fa-smile" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+                <i class="fa fa-wifi" aria-hidden="true"></i>
+                <i class="fa fa-video-camera" aria-hidden="true"></i>
+                <i class="fa fa-users" aria-hidden="true"></i>
+                <i class="fa fa-globe" aria-hidden="true"></i>
+                <i class="fa fa-tag" aria-hidden="true"></i>
+                <i class="fa fa-usd" aria-hidden="true"></i>
+                <i class="fa fa-trophy" aria-hidden="true"></i>
+            </div>
+        </div>
+        <div class = "row">
+            <div>                   
+                <i class="fa fa-battery-full" aria-hidden="true"></i>
+                <i class="fa fa-superscript" aria-hidden="true"></i>
+                <i class="fa fa-line-chart" aria-hidden="true"></i>
+                <i class="fa fa-book" aria-hidden="true"></i>
+                <i class="fa fa-rocket" aria-hidden="true"></i>
+                <i class="fa fa-comments" aria-hidden="true"></i>
+                <i class="fa fa-hashtag" aria-hidden="true"></i>
+                <i class="fa fa-gamepad" aria-hidden="true"></i>
+                <i class="fa fa-home" aria-hidden="true"></i>
+                <i class="fa fa-music" aria-hidden="true"></i>
+                <i class="fa fa-smile" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+                <i class="fa fa-wifi" aria-hidden="true"></i>
+                <i class="fa fa-video-camera" aria-hidden="true"></i>
+                <i class="fa fa-users" aria-hidden="true"></i>
+                <i class="fa fa-globe" aria-hidden="true"></i>
+                <i class="fa fa-tag" aria-hidden="true"></i>
+                <i class="fa fa-usd" aria-hidden="true"></i>
+                <i class="fa fa-trophy" aria-hidden="true"></i>
+            </div>
+            <div>                   
+                <i class="fa fa-battery-full" aria-hidden="true"></i>
+                <i class="fa fa-superscript" aria-hidden="true"></i>
+                <i class="fa fa-line-chart" aria-hidden="true"></i>
+                <i class="fa fa-book" aria-hidden="true"></i>
+                <i class="fa fa-rocket" aria-hidden="true"></i>
+                <i class="fa fa-comments" aria-hidden="true"></i>
+                <i class="fa fa-hashtag" aria-hidden="true"></i>
+                <i class="fa fa-gamepad" aria-hidden="true"></i>
+                <i class="fa fa-home" aria-hidden="true"></i>
+                <i class="fa fa-music" aria-hidden="true"></i>
+                <i class="fa fa-smile" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+                <i class="fa fa-wifi" aria-hidden="true"></i>
+                <i class="fa fa-video-camera" aria-hidden="true"></i>
+                <i class="fa fa-users" aria-hidden="true"></i>
+                <i class="fa fa-globe" aria-hidden="true"></i>
+                <i class="fa fa-tag" aria-hidden="true"></i>
+                <i class="fa fa-usd" aria-hidden="true"></i>
+                <i class="fa fa-trophy" aria-hidden="true"></i>
+            </div>
+        </div>
+        <div class = "row">
+            <div>                   
+                <i class="fa fa-battery-full" aria-hidden="true"></i>
+                <i class="fa fa-superscript" aria-hidden="true"></i>
+                <i class="fa fa-line-chart" aria-hidden="true"></i>
+                <i class="fa fa-book" aria-hidden="true"></i>
+                <i class="fa fa-rocket" aria-hidden="true"></i>
+                <i class="fa fa-comments" aria-hidden="true"></i>
+                <i class="fa fa-hashtag" aria-hidden="true"></i>
+                <i class="fa fa-gamepad" aria-hidden="true"></i>
+                <i class="fa fa-home" aria-hidden="true"></i>
+                <i class="fa fa-music" aria-hidden="true"></i>
+                <i class="fa fa-smile" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+                <i class="fa fa-wifi" aria-hidden="true"></i>
+                <i class="fa fa-video-camera" aria-hidden="true"></i>
+                <i class="fa fa-users" aria-hidden="true"></i>
+                <i class="fa fa-globe" aria-hidden="true"></i>
+                <i class="fa fa-tag" aria-hidden="true"></i>
+                <i class="fa fa-usd" aria-hidden="true"></i>
+                <i class="fa fa-trophy" aria-hidden="true"></i>
+            </div>
+            <div>                   
+                <i class="fa fa-battery-full" aria-hidden="true"></i>
+                <i class="fa fa-superscript" aria-hidden="true"></i>
+                <i class="fa fa-line-chart" aria-hidden="true"></i>
+                <i class="fa fa-book" aria-hidden="true"></i>
+                <i class="fa fa-rocket" aria-hidden="true"></i>
+                <i class="fa fa-comments" aria-hidden="true"></i>
+                <i class="fa fa-hashtag" aria-hidden="true"></i>
+                <i class="fa fa-gamepad" aria-hidden="true"></i>
+                <i class="fa fa-home" aria-hidden="true"></i>
+                <i class="fa fa-music" aria-hidden="true"></i>
+                <i class="fa fa-smile" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+                <i class="fa fa-wifi" aria-hidden="true"></i>
+                <i class="fa fa-video-camera" aria-hidden="true"></i>
+                <i class="fa fa-users" aria-hidden="true"></i>
+                <i class="fa fa-globe" aria-hidden="true"></i>
+                <i class="fa fa-tag" aria-hidden="true"></i>
+                <i class="fa fa-usd" aria-hidden="true"></i>
+                <i class="fa fa-trophy" aria-hidden="true"></i>
+            </div>
+        </div>
+        <div class = "row">
+            <div>                   
+                <i class="fa fa-battery-full" aria-hidden="true"></i>
+                <i class="fa fa-superscript" aria-hidden="true"></i>
+                <i class="fa fa-line-chart" aria-hidden="true"></i>
+                <i class="fa fa-book" aria-hidden="true"></i>
+                <i class="fa fa-rocket" aria-hidden="true"></i>
+                <i class="fa fa-comments" aria-hidden="true"></i>
+                <i class="fa fa-hashtag" aria-hidden="true"></i>
+                <i class="fa fa-gamepad" aria-hidden="true"></i>
+                <i class="fa fa-home" aria-hidden="true"></i>
+                <i class="fa fa-music" aria-hidden="true"></i>
+                <i class="fa fa-smile" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+                <i class="fa fa-wifi" aria-hidden="true"></i>
+                <i class="fa fa-video-camera" aria-hidden="true"></i>
+                <i class="fa fa-users" aria-hidden="true"></i>
+                <i class="fa fa-globe" aria-hidden="true"></i>
+                <i class="fa fa-tag" aria-hidden="true"></i>
+                <i class="fa fa-usd" aria-hidden="true"></i>
+                <i class="fa fa-trophy" aria-hidden="true"></i>
+            </div>
+            <div>                   
+                <i class="fa fa-battery-full" aria-hidden="true"></i>
+                <i class="fa fa-superscript" aria-hidden="true"></i>
+                <i class="fa fa-line-chart" aria-hidden="true"></i>
+                <i class="fa fa-book" aria-hidden="true"></i>
+                <i class="fa fa-rocket" aria-hidden="true"></i>
+                <i class="fa fa-comments" aria-hidden="true"></i>
+                <i class="fa fa-hashtag" aria-hidden="true"></i>
+                <i class="fa fa-gamepad" aria-hidden="true"></i>
+                <i class="fa fa-home" aria-hidden="true"></i>
+                <i class="fa fa-music" aria-hidden="true"></i>
+                <i class="fa fa-smile" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+                <i class="fa fa-wifi" aria-hidden="true"></i>
+                <i class="fa fa-video-camera" aria-hidden="true"></i>
+                <i class="fa fa-users" aria-hidden="true"></i>
+                <i class="fa fa-globe" aria-hidden="true"></i>
+                <i class="fa fa-tag" aria-hidden="true"></i>
+                <i class="fa fa-usd" aria-hidden="true"></i>
+                <i class="fa fa-trophy" aria-hidden="true"></i>
+            </div>
+        </div>
+        <div class = "row">
+            <div>                   
+                <i class="fa fa-battery-full" aria-hidden="true"></i>
+                <i class="fa fa-superscript" aria-hidden="true"></i>
+                <i class="fa fa-line-chart" aria-hidden="true"></i>
+                <i class="fa fa-book" aria-hidden="true"></i>
+                <i class="fa fa-rocket" aria-hidden="true"></i>
+                <i class="fa fa-comments" aria-hidden="true"></i>
+                <i class="fa fa-hashtag" aria-hidden="true"></i>
+                <i class="fa fa-gamepad" aria-hidden="true"></i>
+                <i class="fa fa-home" aria-hidden="true"></i>
+                <i class="fa fa-music" aria-hidden="true"></i>
+                <i class="fa fa-smile" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+                <i class="fa fa-wifi" aria-hidden="true"></i>
+                <i class="fa fa-video-camera" aria-hidden="true"></i>
+                <i class="fa fa-users" aria-hidden="true"></i>
+                <i class="fa fa-globe" aria-hidden="true"></i>
+                <i class="fa fa-tag" aria-hidden="true"></i>
+                <i class="fa fa-usd" aria-hidden="true"></i>
+                <i class="fa fa-trophy" aria-hidden="true"></i>
+            </div>
+            <div>                   
+                <i class="fa fa-battery-full" aria-hidden="true"></i>
+                <i class="fa fa-superscript" aria-hidden="true"></i>
+                <i class="fa fa-line-chart" aria-hidden="true"></i>
+                <i class="fa fa-book" aria-hidden="true"></i>
+                <i class="fa fa-rocket" aria-hidden="true"></i>
+                <i class="fa fa-comments" aria-hidden="true"></i>
+                <i class="fa fa-hashtag" aria-hidden="true"></i>
+                <i class="fa fa-gamepad" aria-hidden="true"></i>
+                <i class="fa fa-home" aria-hidden="true"></i>
+                <i class="fa fa-music" aria-hidden="true"></i>
+                <i class="fa fa-smile" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+                <i class="fa fa-wifi" aria-hidden="true"></i>
+                <i class="fa fa-video-camera" aria-hidden="true"></i>
+                <i class="fa fa-users" aria-hidden="true"></i>
+                <i class="fa fa-globe" aria-hidden="true"></i>
+                <i class="fa fa-tag" aria-hidden="true"></i>
+                <i class="fa fa-usd" aria-hidden="true"></i>
+                <i class="fa fa-trophy" aria-hidden="true"></i>
+            </div>
+        </div>
+        <div class = "row">
+            <div>                   
+                <i class="fa fa-battery-full" aria-hidden="true"></i>
+                <i class="fa fa-superscript" aria-hidden="true"></i>
+                <i class="fa fa-line-chart" aria-hidden="true"></i>
+                <i class="fa fa-book" aria-hidden="true"></i>
+                <i class="fa fa-rocket" aria-hidden="true"></i>
+                <i class="fa fa-comments" aria-hidden="true"></i>
+                <i class="fa fa-hashtag" aria-hidden="true"></i>
+                <i class="fa fa-gamepad" aria-hidden="true"></i>
+                <i class="fa fa-home" aria-hidden="true"></i>
+                <i class="fa fa-music" aria-hidden="true"></i>
+                <i class="fa fa-smile" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+                <i class="fa fa-wifi" aria-hidden="true"></i>
+                <i class="fa fa-video-camera" aria-hidden="true"></i>
+                <i class="fa fa-users" aria-hidden="true"></i>
+                <i class="fa fa-globe" aria-hidden="true"></i>
+                <i class="fa fa-tag" aria-hidden="true"></i>
+                <i class="fa fa-usd" aria-hidden="true"></i>
+                <i class="fa fa-trophy" aria-hidden="true"></i>
+            </div>
+            <div>                   
+                <i class="fa fa-battery-full" aria-hidden="true"></i>
+                <i class="fa fa-superscript" aria-hidden="true"></i>
+                <i class="fa fa-line-chart" aria-hidden="true"></i>
+                <i class="fa fa-book" aria-hidden="true"></i>
+                <i class="fa fa-rocket" aria-hidden="true"></i>
+                <i class="fa fa-comments" aria-hidden="true"></i>
+                <i class="fa fa-hashtag" aria-hidden="true"></i>
+                <i class="fa fa-gamepad" aria-hidden="true"></i>
+                <i class="fa fa-home" aria-hidden="true"></i>
+                <i class="fa fa-music" aria-hidden="true"></i>
+                <i class="fa fa-smile" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+                <i class="fa fa-wifi" aria-hidden="true"></i>
+                <i class="fa fa-video-camera" aria-hidden="true"></i>
+                <i class="fa fa-users" aria-hidden="true"></i>
+                <i class="fa fa-globe" aria-hidden="true"></i>
+                <i class="fa fa-tag" aria-hidden="true"></i>
+                <i class="fa fa-usd" aria-hidden="true"></i>
+                <i class="fa fa-trophy" aria-hidden="true"></i>
+            </div>
+        </div>
+        <div class = "row">
+            <div>                   
+                <i class="fa fa-battery-full" aria-hidden="true"></i>
+                <i class="fa fa-superscript" aria-hidden="true"></i>
+                <i class="fa fa-line-chart" aria-hidden="true"></i>
+                <i class="fa fa-book" aria-hidden="true"></i>
+                <i class="fa fa-rocket" aria-hidden="true"></i>
+                <i class="fa fa-comments" aria-hidden="true"></i>
+                <i class="fa fa-hashtag" aria-hidden="true"></i>
+                <i class="fa fa-gamepad" aria-hidden="true"></i>
+                <i class="fa fa-home" aria-hidden="true"></i>
+                <i class="fa fa-music" aria-hidden="true"></i>
+                <i class="fa fa-smile" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+                <i class="fa fa-wifi" aria-hidden="true"></i>
+                <i class="fa fa-video-camera" aria-hidden="true"></i>
+                <i class="fa fa-users" aria-hidden="true"></i>
+                <i class="fa fa-globe" aria-hidden="true"></i>
+                <i class="fa fa-tag" aria-hidden="true"></i>
+                <i class="fa fa-usd" aria-hidden="true"></i>
+                <i class="fa fa-trophy" aria-hidden="true"></i>
+            </div>
+            <div>                   
+                <i class="fa fa-battery-full" aria-hidden="true"></i>
+                <i class="fa fa-superscript" aria-hidden="true"></i>
+                <i class="fa fa-line-chart" aria-hidden="true"></i>
+                <i class="fa fa-book" aria-hidden="true"></i>
+                <i class="fa fa-rocket" aria-hidden="true"></i>
+                <i class="fa fa-comments" aria-hidden="true"></i>
+                <i class="fa fa-hashtag" aria-hidden="true"></i>
+                <i class="fa fa-gamepad" aria-hidden="true"></i>
+                <i class="fa fa-home" aria-hidden="true"></i>
+                <i class="fa fa-music" aria-hidden="true"></i>
+                <i class="fa fa-smile" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+                <i class="fa fa-wifi" aria-hidden="true"></i>
+                <i class="fa fa-video-camera" aria-hidden="true"></i>
+                <i class="fa fa-users" aria-hidden="true"></i>
+                <i class="fa fa-globe" aria-hidden="true"></i>
+                <i class="fa fa-tag" aria-hidden="true"></i>
+                <i class="fa fa-usd" aria-hidden="true"></i>
+                <i class="fa fa-trophy" aria-hidden="true"></i>
+            </div>
+        </div>
+        <div class = "row">
+            <div>                   
+                <i class="fa fa-battery-full" aria-hidden="true"></i>
+                <i class="fa fa-superscript" aria-hidden="true"></i>
+                <i class="fa fa-line-chart" aria-hidden="true"></i>
+                <i class="fa fa-book" aria-hidden="true"></i>
+                <i class="fa fa-rocket" aria-hidden="true"></i>
+                <i class="fa fa-comments" aria-hidden="true"></i>
+                <i class="fa fa-hashtag" aria-hidden="true"></i>
+                <i class="fa fa-gamepad" aria-hidden="true"></i>
+                <i class="fa fa-home" aria-hidden="true"></i>
+                <i class="fa fa-music" aria-hidden="true"></i>
+                <i class="fa fa-smile" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+                <i class="fa fa-wifi" aria-hidden="true"></i>
+                <i class="fa fa-video-camera" aria-hidden="true"></i>
+                <i class="fa fa-users" aria-hidden="true"></i>
+                <i class="fa fa-globe" aria-hidden="true"></i>
+                <i class="fa fa-tag" aria-hidden="true"></i>
+                <i class="fa fa-usd" aria-hidden="true"></i>
+                <i class="fa fa-trophy" aria-hidden="true"></i>
+            </div>
+            <div>                   
+                <i class="fa fa-battery-full" aria-hidden="true"></i>
+                <i class="fa fa-superscript" aria-hidden="true"></i>
+                <i class="fa fa-line-chart" aria-hidden="true"></i>
+                <i class="fa fa-book" aria-hidden="true"></i>
+                <i class="fa fa-rocket" aria-hidden="true"></i>
+                <i class="fa fa-comments" aria-hidden="true"></i>
+                <i class="fa fa-hashtag" aria-hidden="true"></i>
+                <i class="fa fa-gamepad" aria-hidden="true"></i>
+                <i class="fa fa-home" aria-hidden="true"></i>
+                <i class="fa fa-music" aria-hidden="true"></i>
+                <i class="fa fa-smile" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+                <i class="fa fa-wifi" aria-hidden="true"></i>
+                <i class="fa fa-video-camera" aria-hidden="true"></i>
+                <i class="fa fa-users" aria-hidden="true"></i>
+                <i class="fa fa-globe" aria-hidden="true"></i>
+                <i class="fa fa-tag" aria-hidden="true"></i>
+                <i class="fa fa-usd" aria-hidden="true"></i>
+                <i class="fa fa-trophy" aria-hidden="true"></i>
+            </div>
+        </div>
+        <div class = "row">
+            <div>                   
+                <i class="fa fa-battery-full" aria-hidden="true"></i>
+                <i class="fa fa-superscript" aria-hidden="true"></i>
+                <i class="fa fa-line-chart" aria-hidden="true"></i>
+                <i class="fa fa-book" aria-hidden="true"></i>
+                <i class="fa fa-rocket" aria-hidden="true"></i>
+                <i class="fa fa-comments" aria-hidden="true"></i>
+                <i class="fa fa-hashtag" aria-hidden="true"></i>
+                <i class="fa fa-gamepad" aria-hidden="true"></i>
+                <i class="fa fa-home" aria-hidden="true"></i>
+                <i class="fa fa-music" aria-hidden="true"></i>
+                <i class="fa fa-smile" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+                <i class="fa fa-wifi" aria-hidden="true"></i>
+                <i class="fa fa-video-camera" aria-hidden="true"></i>
+                <i class="fa fa-users" aria-hidden="true"></i>
+                <i class="fa fa-globe" aria-hidden="true"></i>
+                <i class="fa fa-tag" aria-hidden="true"></i>
+                <i class="fa fa-usd" aria-hidden="true"></i>
+                <i class="fa fa-trophy" aria-hidden="true"></i>
+            </div>
+            <div>                   
+                <i class="fa fa-battery-full" aria-hidden="true"></i>
+                <i class="fa fa-superscript" aria-hidden="true"></i>
+                <i class="fa fa-line-chart" aria-hidden="true"></i>
+                <i class="fa fa-book" aria-hidden="true"></i>
+                <i class="fa fa-rocket" aria-hidden="true"></i>
+                <i class="fa fa-comments" aria-hidden="true"></i>
+                <i class="fa fa-hashtag" aria-hidden="true"></i>
+                <i class="fa fa-gamepad" aria-hidden="true"></i>
+                <i class="fa fa-home" aria-hidden="true"></i>
+                <i class="fa fa-music" aria-hidden="true"></i>
+                <i class="fa fa-smile" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+                <i class="fa fa-wifi" aria-hidden="true"></i>
+                <i class="fa fa-video-camera" aria-hidden="true"></i>
+                <i class="fa fa-users" aria-hidden="true"></i>
+                <i class="fa fa-globe" aria-hidden="true"></i>
+                <i class="fa fa-tag" aria-hidden="true"></i>
+                <i class="fa fa-usd" aria-hidden="true"></i>
+                <i class="fa fa-trophy" aria-hidden="true"></i>
+            </div>
+        </div>
+        <div class = "row">
+            <div>                   
+                <i class="fa fa-battery-full" aria-hidden="true"></i>
+                <i class="fa fa-superscript" aria-hidden="true"></i>
+                <i class="fa fa-line-chart" aria-hidden="true"></i>
+                <i class="fa fa-book" aria-hidden="true"></i>
+                <i class="fa fa-rocket" aria-hidden="true"></i>
+                <i class="fa fa-comments" aria-hidden="true"></i>
+                <i class="fa fa-hashtag" aria-hidden="true"></i>
+                <i class="fa fa-gamepad" aria-hidden="true"></i>
+                <i class="fa fa-home" aria-hidden="true"></i>
+                <i class="fa fa-music" aria-hidden="true"></i>
+                <i class="fa fa-smile" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+                <i class="fa fa-wifi" aria-hidden="true"></i>
+                <i class="fa fa-video-camera" aria-hidden="true"></i>
+                <i class="fa fa-users" aria-hidden="true"></i>
+                <i class="fa fa-globe" aria-hidden="true"></i>
+                <i class="fa fa-tag" aria-hidden="true"></i>
+                <i class="fa fa-usd" aria-hidden="true"></i>
+                <i class="fa fa-trophy" aria-hidden="true"></i>
+            </div>
+            <div>                   
+                <i class="fa fa-battery-full" aria-hidden="true"></i>
+                <i class="fa fa-superscript" aria-hidden="true"></i>
+                <i class="fa fa-line-chart" aria-hidden="true"></i>
+                <i class="fa fa-book" aria-hidden="true"></i>
+                <i class="fa fa-rocket" aria-hidden="true"></i>
+                <i class="fa fa-comments" aria-hidden="true"></i>
+                <i class="fa fa-hashtag" aria-hidden="true"></i>
+                <i class="fa fa-gamepad" aria-hidden="true"></i>
+                <i class="fa fa-home" aria-hidden="true"></i>
+                <i class="fa fa-music" aria-hidden="true"></i>
+                <i class="fa fa-smile" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+                <i class="fa fa-wifi" aria-hidden="true"></i>
+                <i class="fa fa-video-camera" aria-hidden="true"></i>
+                <i class="fa fa-users" aria-hidden="true"></i>
+                <i class="fa fa-globe" aria-hidden="true"></i>
+                <i class="fa fa-tag" aria-hidden="true"></i>
+                <i class="fa fa-usd" aria-hidden="true"></i>
+                <i class="fa fa-trophy" aria-hidden="true"></i>
+            </div>
+        </div>
+        <div class = "row">
+            <div>                   
+                <i class="fa fa-battery-full" aria-hidden="true"></i>
+                <i class="fa fa-superscript" aria-hidden="true"></i>
+                <i class="fa fa-line-chart" aria-hidden="true"></i>
+                <i class="fa fa-book" aria-hidden="true"></i>
+                <i class="fa fa-rocket" aria-hidden="true"></i>
+                <i class="fa fa-comments" aria-hidden="true"></i>
+                <i class="fa fa-hashtag" aria-hidden="true"></i>
+                <i class="fa fa-gamepad" aria-hidden="true"></i>
+                <i class="fa fa-home" aria-hidden="true"></i>
+                <i class="fa fa-music" aria-hidden="true"></i>
+                <i class="fa fa-smile" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+                <i class="fa fa-wifi" aria-hidden="true"></i>
+                <i class="fa fa-video-camera" aria-hidden="true"></i>
+                <i class="fa fa-users" aria-hidden="true"></i>
+                <i class="fa fa-globe" aria-hidden="true"></i>
+                <i class="fa fa-tag" aria-hidden="true"></i>
+                <i class="fa fa-usd" aria-hidden="true"></i>
+                <i class="fa fa-trophy" aria-hidden="true"></i>
+            </div>
+            <div>                   
+                <i class="fa fa-battery-full" aria-hidden="true"></i>
+                <i class="fa fa-superscript" aria-hidden="true"></i>
+                <i class="fa fa-line-chart" aria-hidden="true"></i>
+                <i class="fa fa-book" aria-hidden="true"></i>
+                <i class="fa fa-rocket" aria-hidden="true"></i>
+                <i class="fa fa-comments" aria-hidden="true"></i>
+                <i class="fa fa-hashtag" aria-hidden="true"></i>
+                <i class="fa fa-gamepad" aria-hidden="true"></i>
+                <i class="fa fa-home" aria-hidden="true"></i>
+                <i class="fa fa-music" aria-hidden="true"></i>
+                <i class="fa fa-smile" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+                <i class="fa fa-wifi" aria-hidden="true"></i>
+                <i class="fa fa-video-camera" aria-hidden="true"></i>
+                <i class="fa fa-users" aria-hidden="true"></i>
+                <i class="fa fa-globe" aria-hidden="true"></i>
+                <i class="fa fa-tag" aria-hidden="true"></i>
+                <i class="fa fa-usd" aria-hidden="true"></i>
+                <i class="fa fa-trophy" aria-hidden="true"></i>
+            </div>
+        </div>
+        <div class = "row">
+            <div>                   
+                <i class="fa fa-battery-full" aria-hidden="true"></i>
+                <i class="fa fa-superscript" aria-hidden="true"></i>
+                <i class="fa fa-line-chart" aria-hidden="true"></i>
+                <i class="fa fa-book" aria-hidden="true"></i>
+                <i class="fa fa-rocket" aria-hidden="true"></i>
+                <i class="fa fa-comments" aria-hidden="true"></i>
+                <i class="fa fa-hashtag" aria-hidden="true"></i>
+                <i class="fa fa-gamepad" aria-hidden="true"></i>
+                <i class="fa fa-home" aria-hidden="true"></i>
+                <i class="fa fa-music" aria-hidden="true"></i>
+                <i class="fa fa-smile" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+                <i class="fa fa-wifi" aria-hidden="true"></i>
+                <i class="fa fa-video-camera" aria-hidden="true"></i>
+                <i class="fa fa-users" aria-hidden="true"></i>
+                <i class="fa fa-globe" aria-hidden="true"></i>
+                <i class="fa fa-tag" aria-hidden="true"></i>
+                <i class="fa fa-usd" aria-hidden="true"></i>
+                <i class="fa fa-trophy" aria-hidden="true"></i>
+            </div>
+            <div>                   
+                <i class="fa fa-battery-full" aria-hidden="true"></i>
+                <i class="fa fa-superscript" aria-hidden="true"></i>
+                <i class="fa fa-line-chart" aria-hidden="true"></i>
+                <i class="fa fa-book" aria-hidden="true"></i>
+                <i class="fa fa-rocket" aria-hidden="true"></i>
+                <i class="fa fa-comments" aria-hidden="true"></i>
+                <i class="fa fa-hashtag" aria-hidden="true"></i>
+                <i class="fa fa-gamepad" aria-hidden="true"></i>
+                <i class="fa fa-home" aria-hidden="true"></i>
+                <i class="fa fa-music" aria-hidden="true"></i>
+                <i class="fa fa-smile" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+                <i class="fa fa-wifi" aria-hidden="true"></i>
+                <i class="fa fa-video-camera" aria-hidden="true"></i>
+                <i class="fa fa-users" aria-hidden="true"></i>
+                <i class="fa fa-globe" aria-hidden="true"></i>
+                <i class="fa fa-tag" aria-hidden="true"></i>
+                <i class="fa fa-usd" aria-hidden="true"></i>
+                <i class="fa fa-trophy" aria-hidden="true"></i>
+            </div>
+        </div>
+        <div class = "row">
+            <div>                   
+                <i class="fa fa-battery-full" aria-hidden="true"></i>
+                <i class="fa fa-superscript" aria-hidden="true"></i>
+                <i class="fa fa-line-chart" aria-hidden="true"></i>
+                <i class="fa fa-book" aria-hidden="true"></i>
+                <i class="fa fa-rocket" aria-hidden="true"></i>
+                <i class="fa fa-comments" aria-hidden="true"></i>
+                <i class="fa fa-hashtag" aria-hidden="true"></i>
+                <i class="fa fa-gamepad" aria-hidden="true"></i>
+                <i class="fa fa-home" aria-hidden="true"></i>
+                <i class="fa fa-music" aria-hidden="true"></i>
+                <i class="fa fa-smile" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+                <i class="fa fa-wifi" aria-hidden="true"></i>
+                <i class="fa fa-video-camera" aria-hidden="true"></i>
+                <i class="fa fa-users" aria-hidden="true"></i>
+                <i class="fa fa-globe" aria-hidden="true"></i>
+                <i class="fa fa-tag" aria-hidden="true"></i>
+                <i class="fa fa-usd" aria-hidden="true"></i>
+                <i class="fa fa-trophy" aria-hidden="true"></i>
+            </div>
+            <div>                   
+                <i class="fa fa-battery-full" aria-hidden="true"></i>
+                <i class="fa fa-superscript" aria-hidden="true"></i>
+                <i class="fa fa-line-chart" aria-hidden="true"></i>
+                <i class="fa fa-book" aria-hidden="true"></i>
+                <i class="fa fa-rocket" aria-hidden="true"></i>
+                <i class="fa fa-comments" aria-hidden="true"></i>
+                <i class="fa fa-hashtag" aria-hidden="true"></i>
+                <i class="fa fa-gamepad" aria-hidden="true"></i>
+                <i class="fa fa-home" aria-hidden="true"></i>
+                <i class="fa fa-music" aria-hidden="true"></i>
+                <i class="fa fa-smile" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+                <i class="fa fa-wifi" aria-hidden="true"></i>
+                <i class="fa fa-video-camera" aria-hidden="true"></i>
+                <i class="fa fa-users" aria-hidden="true"></i>
+                <i class="fa fa-globe" aria-hidden="true"></i>
+                <i class="fa fa-tag" aria-hidden="true"></i>
+                <i class="fa fa-usd" aria-hidden="true"></i>
+                <i class="fa fa-trophy" aria-hidden="true"></i>
+            </div>
+        </div>
+        <div class = "row">
+            <div>                   
+                <i class="fa fa-battery-full" aria-hidden="true"></i>
+                <i class="fa fa-superscript" aria-hidden="true"></i>
+                <i class="fa fa-line-chart" aria-hidden="true"></i>
+                <i class="fa fa-book" aria-hidden="true"></i>
+                <i class="fa fa-rocket" aria-hidden="true"></i>
+                <i class="fa fa-comments" aria-hidden="true"></i>
+                <i class="fa fa-hashtag" aria-hidden="true"></i>
+                <i class="fa fa-gamepad" aria-hidden="true"></i>
+                <i class="fa fa-home" aria-hidden="true"></i>
+                <i class="fa fa-music" aria-hidden="true"></i>
+                <i class="fa fa-smile" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+                <i class="fa fa-wifi" aria-hidden="true"></i>
+                <i class="fa fa-video-camera" aria-hidden="true"></i>
+                <i class="fa fa-users" aria-hidden="true"></i>
+                <i class="fa fa-globe" aria-hidden="true"></i>
+                <i class="fa fa-tag" aria-hidden="true"></i>
+                <i class="fa fa-usd" aria-hidden="true"></i>
+                <i class="fa fa-trophy" aria-hidden="true"></i>
+            </div>
+            <div>                   
+                <i class="fa fa-battery-full" aria-hidden="true"></i>
+                <i class="fa fa-superscript" aria-hidden="true"></i>
+                <i class="fa fa-line-chart" aria-hidden="true"></i>
+                <i class="fa fa-book" aria-hidden="true"></i>
+                <i class="fa fa-rocket" aria-hidden="true"></i>
+                <i class="fa fa-comments" aria-hidden="true"></i>
+                <i class="fa fa-hashtag" aria-hidden="true"></i>
+                <i class="fa fa-gamepad" aria-hidden="true"></i>
+                <i class="fa fa-home" aria-hidden="true"></i>
+                <i class="fa fa-music" aria-hidden="true"></i>
+                <i class="fa fa-smile" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+                <i class="fa fa-wifi" aria-hidden="true"></i>
+                <i class="fa fa-video-camera" aria-hidden="true"></i>
+                <i class="fa fa-users" aria-hidden="true"></i>
+                <i class="fa fa-globe" aria-hidden="true"></i>
+                <i class="fa fa-tag" aria-hidden="true"></i>
+                <i class="fa fa-usd" aria-hidden="true"></i>
+                <i class="fa fa-trophy" aria-hidden="true"></i>
+            </div>
+        </div>
+        <div class = "row">
+            <div>                   
+                <i class="fa fa-battery-full" aria-hidden="true"></i>
+                <i class="fa fa-superscript" aria-hidden="true"></i>
+                <i class="fa fa-line-chart" aria-hidden="true"></i>
+                <i class="fa fa-book" aria-hidden="true"></i>
+                <i class="fa fa-rocket" aria-hidden="true"></i>
+                <i class="fa fa-comments" aria-hidden="true"></i>
+                <i class="fa fa-hashtag" aria-hidden="true"></i>
+                <i class="fa fa-gamepad" aria-hidden="true"></i>
+                <i class="fa fa-home" aria-hidden="true"></i>
+                <i class="fa fa-music" aria-hidden="true"></i>
+                <i class="fa fa-smile" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+                <i class="fa fa-wifi" aria-hidden="true"></i>
+                <i class="fa fa-video-camera" aria-hidden="true"></i>
+                <i class="fa fa-users" aria-hidden="true"></i>
+                <i class="fa fa-globe" aria-hidden="true"></i>
+                <i class="fa fa-tag" aria-hidden="true"></i>
+                <i class="fa fa-usd" aria-hidden="true"></i>
+                <i class="fa fa-trophy" aria-hidden="true"></i>
+            </div>
+            <div>                   
+                <i class="fa fa-battery-full" aria-hidden="true"></i>
+                <i class="fa fa-superscript" aria-hidden="true"></i>
+                <i class="fa fa-line-chart" aria-hidden="true"></i>
+                <i class="fa fa-book" aria-hidden="true"></i>
+                <i class="fa fa-rocket" aria-hidden="true"></i>
+                <i class="fa fa-comments" aria-hidden="true"></i>
+                <i class="fa fa-hashtag" aria-hidden="true"></i>
+                <i class="fa fa-gamepad" aria-hidden="true"></i>
+                <i class="fa fa-home" aria-hidden="true"></i>
+                <i class="fa fa-music" aria-hidden="true"></i>
+                <i class="fa fa-smile" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+                <i class="fa fa-wifi" aria-hidden="true"></i>
+                <i class="fa fa-video-camera" aria-hidden="true"></i>
+                <i class="fa fa-users" aria-hidden="true"></i>
+                <i class="fa fa-globe" aria-hidden="true"></i>
+                <i class="fa fa-tag" aria-hidden="true"></i>
+                <i class="fa fa-usd" aria-hidden="true"></i>
+                <i class="fa fa-trophy" aria-hidden="true"></i>
+            </div>
+        </div>
+        <div class = "row">
+            <div>                   
+                <i class="fa fa-battery-full" aria-hidden="true"></i>
+                <i class="fa fa-superscript" aria-hidden="true"></i>
+                <i class="fa fa-line-chart" aria-hidden="true"></i>
+                <i class="fa fa-book" aria-hidden="true"></i>
+                <i class="fa fa-rocket" aria-hidden="true"></i>
+                <i class="fa fa-comments" aria-hidden="true"></i>
+                <i class="fa fa-hashtag" aria-hidden="true"></i>
+                <i class="fa fa-gamepad" aria-hidden="true"></i>
+                <i class="fa fa-home" aria-hidden="true"></i>
+                <i class="fa fa-music" aria-hidden="true"></i>
+                <i class="fa fa-smile" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+                <i class="fa fa-wifi" aria-hidden="true"></i>
+                <i class="fa fa-video-camera" aria-hidden="true"></i>
+                <i class="fa fa-users" aria-hidden="true"></i>
+                <i class="fa fa-globe" aria-hidden="true"></i>
+                <i class="fa fa-tag" aria-hidden="true"></i>
+                <i class="fa fa-usd" aria-hidden="true"></i>
+                <i class="fa fa-trophy" aria-hidden="true"></i>
+            </div>
+            <div>                   
+                <i class="fa fa-battery-full" aria-hidden="true"></i>
+                <i class="fa fa-superscript" aria-hidden="true"></i>
+                <i class="fa fa-line-chart" aria-hidden="true"></i>
+                <i class="fa fa-book" aria-hidden="true"></i>
+                <i class="fa fa-rocket" aria-hidden="true"></i>
+                <i class="fa fa-comments" aria-hidden="true"></i>
+                <i class="fa fa-hashtag" aria-hidden="true"></i>
+                <i class="fa fa-gamepad" aria-hidden="true"></i>
+                <i class="fa fa-home" aria-hidden="true"></i>
+                <i class="fa fa-music" aria-hidden="true"></i>
+                <i class="fa fa-smile" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+                <i class="fa fa-wifi" aria-hidden="true"></i>
+                <i class="fa fa-video-camera" aria-hidden="true"></i>
+                <i class="fa fa-users" aria-hidden="true"></i>
+                <i class="fa fa-globe" aria-hidden="true"></i>
+                <i class="fa fa-tag" aria-hidden="true"></i>
+                <i class="fa fa-usd" aria-hidden="true"></i>
+                <i class="fa fa-trophy" aria-hidden="true"></i>
+            </div>
+        </div>
+        <div class = "row">
+            <div>                   
+                <i class="fa fa-battery-full" aria-hidden="true"></i>
+                <i class="fa fa-superscript" aria-hidden="true"></i>
+                <i class="fa fa-line-chart" aria-hidden="true"></i>
+                <i class="fa fa-book" aria-hidden="true"></i>
+                <i class="fa fa-rocket" aria-hidden="true"></i>
+                <i class="fa fa-comments" aria-hidden="true"></i>
+                <i class="fa fa-hashtag" aria-hidden="true"></i>
+                <i class="fa fa-gamepad" aria-hidden="true"></i>
+                <i class="fa fa-home" aria-hidden="true"></i>
+                <i class="fa fa-music" aria-hidden="true"></i>
+                <i class="fa fa-smile" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+                <i class="fa fa-wifi" aria-hidden="true"></i>
+                <i class="fa fa-video-camera" aria-hidden="true"></i>
+                <i class="fa fa-users" aria-hidden="true"></i>
+                <i class="fa fa-globe" aria-hidden="true"></i>
+                <i class="fa fa-tag" aria-hidden="true"></i>
+                <i class="fa fa-usd" aria-hidden="true"></i>
+                <i class="fa fa-trophy" aria-hidden="true"></i>
+            </div>
+            <div>                   
+                <i class="fa fa-battery-full" aria-hidden="true"></i>
+                <i class="fa fa-superscript" aria-hidden="true"></i>
+                <i class="fa fa-line-chart" aria-hidden="true"></i>
+                <i class="fa fa-book" aria-hidden="true"></i>
+                <i class="fa fa-rocket" aria-hidden="true"></i>
+                <i class="fa fa-comments" aria-hidden="true"></i>
+                <i class="fa fa-hashtag" aria-hidden="true"></i>
+                <i class="fa fa-gamepad" aria-hidden="true"></i>
+                <i class="fa fa-home" aria-hidden="true"></i>
+                <i class="fa fa-music" aria-hidden="true"></i>
+                <i class="fa fa-smile" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+                <i class="fa fa-wifi" aria-hidden="true"></i>
+                <i class="fa fa-video-camera" aria-hidden="true"></i>
+                <i class="fa fa-users" aria-hidden="true"></i>
+                <i class="fa fa-globe" aria-hidden="true"></i>
+                <i class="fa fa-tag" aria-hidden="true"></i>
+                <i class="fa fa-usd" aria-hidden="true"></i>
+                <i class="fa fa-trophy" aria-hidden="true"></i>
+            </div>
+        </div>
+        <div class = "row">
+            <div>                   
+                <i class="fa fa-battery-full" aria-hidden="true"></i>
+                <i class="fa fa-superscript" aria-hidden="true"></i>
+                <i class="fa fa-line-chart" aria-hidden="true"></i>
+                <i class="fa fa-book" aria-hidden="true"></i>
+                <i class="fa fa-rocket" aria-hidden="true"></i>
+                <i class="fa fa-comments" aria-hidden="true"></i>
+                <i class="fa fa-hashtag" aria-hidden="true"></i>
+                <i class="fa fa-gamepad" aria-hidden="true"></i>
+                <i class="fa fa-home" aria-hidden="true"></i>
+                <i class="fa fa-music" aria-hidden="true"></i>
+                <i class="fa fa-smile" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+                <i class="fa fa-wifi" aria-hidden="true"></i>
+                <i class="fa fa-video-camera" aria-hidden="true"></i>
+                <i class="fa fa-users" aria-hidden="true"></i>
+                <i class="fa fa-globe" aria-hidden="true"></i>
+                <i class="fa fa-tag" aria-hidden="true"></i>
+                <i class="fa fa-usd" aria-hidden="true"></i>
+                <i class="fa fa-trophy" aria-hidden="true"></i>
+            </div>
+            <div>                   
+                <i class="fa fa-battery-full" aria-hidden="true"></i>
+                <i class="fa fa-superscript" aria-hidden="true"></i>
+                <i class="fa fa-line-chart" aria-hidden="true"></i>
+                <i class="fa fa-book" aria-hidden="true"></i>
+                <i class="fa fa-rocket" aria-hidden="true"></i>
+                <i class="fa fa-comments" aria-hidden="true"></i>
+                <i class="fa fa-hashtag" aria-hidden="true"></i>
+                <i class="fa fa-gamepad" aria-hidden="true"></i>
+                <i class="fa fa-home" aria-hidden="true"></i>
+                <i class="fa fa-music" aria-hidden="true"></i>
+                <i class="fa fa-smile" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+                <i class="fa fa-wifi" aria-hidden="true"></i>
+                <i class="fa fa-video-camera" aria-hidden="true"></i>
+                <i class="fa fa-users" aria-hidden="true"></i>
+                <i class="fa fa-globe" aria-hidden="true"></i>
+                <i class="fa fa-tag" aria-hidden="true"></i>
+                <i class="fa fa-usd" aria-hidden="true"></i>
+                <i class="fa fa-trophy" aria-hidden="true"></i>
+            </div>
+        </div>
+        <div class = "row">
+            <div>                   
+                <i class="fa fa-battery-full" aria-hidden="true"></i>
+                <i class="fa fa-superscript" aria-hidden="true"></i>
+                <i class="fa fa-line-chart" aria-hidden="true"></i>
+                <i class="fa fa-book" aria-hidden="true"></i>
+                <i class="fa fa-rocket" aria-hidden="true"></i>
+                <i class="fa fa-comments" aria-hidden="true"></i>
+                <i class="fa fa-hashtag" aria-hidden="true"></i>
+                <i class="fa fa-gamepad" aria-hidden="true"></i>
+                <i class="fa fa-home" aria-hidden="true"></i>
+                <i class="fa fa-music" aria-hidden="true"></i>
+                <i class="fa fa-smile" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+                <i class="fa fa-wifi" aria-hidden="true"></i>
+                <i class="fa fa-video-camera" aria-hidden="true"></i>
+                <i class="fa fa-users" aria-hidden="true"></i>
+                <i class="fa fa-globe" aria-hidden="true"></i>
+                <i class="fa fa-tag" aria-hidden="true"></i>
+                <i class="fa fa-usd" aria-hidden="true"></i>
+                <i class="fa fa-trophy" aria-hidden="true"></i>
+            </div>
+            <div>                   
+                <i class="fa fa-battery-full" aria-hidden="true"></i>
+                <i class="fa fa-superscript" aria-hidden="true"></i>
+                <i class="fa fa-line-chart" aria-hidden="true"></i>
+                <i class="fa fa-book" aria-hidden="true"></i>
+                <i class="fa fa-rocket" aria-hidden="true"></i>
+                <i class="fa fa-comments" aria-hidden="true"></i>
+                <i class="fa fa-hashtag" aria-hidden="true"></i>
+                <i class="fa fa-gamepad" aria-hidden="true"></i>
+                <i class="fa fa-home" aria-hidden="true"></i>
+                <i class="fa fa-music" aria-hidden="true"></i>
+                <i class="fa fa-smile" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+                <i class="fa fa-wifi" aria-hidden="true"></i>
+                <i class="fa fa-video-camera" aria-hidden="true"></i>
+                <i class="fa fa-users" aria-hidden="true"></i>
+                <i class="fa fa-globe" aria-hidden="true"></i>
+                <i class="fa fa-tag" aria-hidden="true"></i>
+                <i class="fa fa-usd" aria-hidden="true"></i>
+                <i class="fa fa-trophy" aria-hidden="true"></i>
+            </div>
+        </div>
+        <div class = "row">
+            <div>                   
+                <i class="fa fa-battery-full" aria-hidden="true"></i>
+                <i class="fa fa-superscript" aria-hidden="true"></i>
+                <i class="fa fa-line-chart" aria-hidden="true"></i>
+                <i class="fa fa-book" aria-hidden="true"></i>
+                <i class="fa fa-rocket" aria-hidden="true"></i>
+                <i class="fa fa-comments" aria-hidden="true"></i>
+                <i class="fa fa-hashtag" aria-hidden="true"></i>
+                <i class="fa fa-gamepad" aria-hidden="true"></i>
+                <i class="fa fa-home" aria-hidden="true"></i>
+                <i class="fa fa-music" aria-hidden="true"></i>
+                <i class="fa fa-smile" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+                <i class="fa fa-wifi" aria-hidden="true"></i>
+                <i class="fa fa-video-camera" aria-hidden="true"></i>
+                <i class="fa fa-users" aria-hidden="true"></i>
+                <i class="fa fa-globe" aria-hidden="true"></i>
+                <i class="fa fa-tag" aria-hidden="true"></i>
+                <i class="fa fa-usd" aria-hidden="true"></i>
+                <i class="fa fa-trophy" aria-hidden="true"></i>
+            </div>
+            <div>                   
+                <i class="fa fa-battery-full" aria-hidden="true"></i>
+                <i class="fa fa-superscript" aria-hidden="true"></i>
+                <i class="fa fa-line-chart" aria-hidden="true"></i>
+                <i class="fa fa-book" aria-hidden="true"></i>
+                <i class="fa fa-rocket" aria-hidden="true"></i>
+                <i class="fa fa-comments" aria-hidden="true"></i>
+                <i class="fa fa-hashtag" aria-hidden="true"></i>
+                <i class="fa fa-gamepad" aria-hidden="true"></i>
+                <i class="fa fa-home" aria-hidden="true"></i>
+                <i class="fa fa-music" aria-hidden="true"></i>
+                <i class="fa fa-smile" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+                <i class="fa fa-wifi" aria-hidden="true"></i>
+                <i class="fa fa-video-camera" aria-hidden="true"></i>
+                <i class="fa fa-users" aria-hidden="true"></i>
+                <i class="fa fa-globe" aria-hidden="true"></i>
+                <i class="fa fa-tag" aria-hidden="true"></i>
+                <i class="fa fa-usd" aria-hidden="true"></i>
+                <i class="fa fa-trophy" aria-hidden="true"></i>
+            </div>
+        </div>
+        <div class = "row">
+            <div>                   
+                <i class="fa fa-battery-full" aria-hidden="true"></i>
+                <i class="fa fa-superscript" aria-hidden="true"></i>
+                <i class="fa fa-line-chart" aria-hidden="true"></i>
+                <i class="fa fa-book" aria-hidden="true"></i>
+                <i class="fa fa-rocket" aria-hidden="true"></i>
+                <i class="fa fa-comments" aria-hidden="true"></i>
+                <i class="fa fa-hashtag" aria-hidden="true"></i>
+                <i class="fa fa-gamepad" aria-hidden="true"></i>
+                <i class="fa fa-home" aria-hidden="true"></i>
+                <i class="fa fa-music" aria-hidden="true"></i>
+                <i class="fa fa-smile" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+                <i class="fa fa-wifi" aria-hidden="true"></i>
+                <i class="fa fa-video-camera" aria-hidden="true"></i>
+                <i class="fa fa-users" aria-hidden="true"></i>
+                <i class="fa fa-globe" aria-hidden="true"></i>
+                <i class="fa fa-tag" aria-hidden="true"></i>
+                <i class="fa fa-usd" aria-hidden="true"></i>
+                <i class="fa fa-trophy" aria-hidden="true"></i>
+            </div>
+            <div>                   
+                <i class="fa fa-battery-full" aria-hidden="true"></i>
+                <i class="fa fa-superscript" aria-hidden="true"></i>
+                <i class="fa fa-line-chart" aria-hidden="true"></i>
+                <i class="fa fa-book" aria-hidden="true"></i>
+                <i class="fa fa-rocket" aria-hidden="true"></i>
+                <i class="fa fa-comments" aria-hidden="true"></i>
+                <i class="fa fa-hashtag" aria-hidden="true"></i>
+                <i class="fa fa-gamepad" aria-hidden="true"></i>
+                <i class="fa fa-home" aria-hidden="true"></i>
+                <i class="fa fa-music" aria-hidden="true"></i>
+                <i class="fa fa-smile" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+                <i class="fa fa-wifi" aria-hidden="true"></i>
+                <i class="fa fa-video-camera" aria-hidden="true"></i>
+                <i class="fa fa-users" aria-hidden="true"></i>
+                <i class="fa fa-globe" aria-hidden="true"></i>
+                <i class="fa fa-tag" aria-hidden="true"></i>
+                <i class="fa fa-usd" aria-hidden="true"></i>
+                <i class="fa fa-trophy" aria-hidden="true"></i>
+            </div>
+        </div>
+        <div class = "row">
+            <div>                   
+                <i class="fa fa-battery-full" aria-hidden="true"></i>
+                <i class="fa fa-superscript" aria-hidden="true"></i>
+                <i class="fa fa-line-chart" aria-hidden="true"></i>
+                <i class="fa fa-book" aria-hidden="true"></i>
+                <i class="fa fa-rocket" aria-hidden="true"></i>
+                <i class="fa fa-comments" aria-hidden="true"></i>
+                <i class="fa fa-hashtag" aria-hidden="true"></i>
+                <i class="fa fa-gamepad" aria-hidden="true"></i>
+                <i class="fa fa-home" aria-hidden="true"></i>
+                <i class="fa fa-music" aria-hidden="true"></i>
+                <i class="fa fa-smile" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+                <i class="fa fa-wifi" aria-hidden="true"></i>
+                <i class="fa fa-video-camera" aria-hidden="true"></i>
+                <i class="fa fa-users" aria-hidden="true"></i>
+                <i class="fa fa-globe" aria-hidden="true"></i>
+                <i class="fa fa-tag" aria-hidden="true"></i>
+                <i class="fa fa-usd" aria-hidden="true"></i>
+                <i class="fa fa-trophy" aria-hidden="true"></i>
+            </div>
+            <div>                   
+                <i class="fa fa-battery-full" aria-hidden="true"></i>
+                <i class="fa fa-superscript" aria-hidden="true"></i>
+                <i class="fa fa-line-chart" aria-hidden="true"></i>
+                <i class="fa fa-book" aria-hidden="true"></i>
+                <i class="fa fa-rocket" aria-hidden="true"></i>
+                <i class="fa fa-comments" aria-hidden="true"></i>
+                <i class="fa fa-hashtag" aria-hidden="true"></i>
+                <i class="fa fa-gamepad" aria-hidden="true"></i>
+                <i class="fa fa-home" aria-hidden="true"></i>
+                <i class="fa fa-music" aria-hidden="true"></i>
+                <i class="fa fa-smile" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+                <i class="fa fa-wifi" aria-hidden="true"></i>
+                <i class="fa fa-video-camera" aria-hidden="true"></i>
+                <i class="fa fa-users" aria-hidden="true"></i>
+                <i class="fa fa-globe" aria-hidden="true"></i>
+                <i class="fa fa-tag" aria-hidden="true"></i>
+                <i class="fa fa-usd" aria-hidden="true"></i>
+                <i class="fa fa-trophy" aria-hidden="true"></i>
+            </div>
+        </div>
+        <div class = "row">
+            <div>                   
+                <i class="fa fa-battery-full" aria-hidden="true"></i>
+                <i class="fa fa-superscript" aria-hidden="true"></i>
+                <i class="fa fa-line-chart" aria-hidden="true"></i>
+                <i class="fa fa-book" aria-hidden="true"></i>
+                <i class="fa fa-rocket" aria-hidden="true"></i>
+                <i class="fa fa-comments" aria-hidden="true"></i>
+                <i class="fa fa-hashtag" aria-hidden="true"></i>
+                <i class="fa fa-gamepad" aria-hidden="true"></i>
+                <i class="fa fa-home" aria-hidden="true"></i>
+                <i class="fa fa-music" aria-hidden="true"></i>
+                <i class="fa fa-smile" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+                <i class="fa fa-wifi" aria-hidden="true"></i>
+                <i class="fa fa-video-camera" aria-hidden="true"></i>
+                <i class="fa fa-users" aria-hidden="true"></i>
+                <i class="fa fa-globe" aria-hidden="true"></i>
+                <i class="fa fa-tag" aria-hidden="true"></i>
+                <i class="fa fa-usd" aria-hidden="true"></i>
+                <i class="fa fa-trophy" aria-hidden="true"></i>
+            </div>
+            <div>                   
+                <i class="fa fa-battery-full" aria-hidden="true"></i>
+                <i class="fa fa-superscript" aria-hidden="true"></i>
+                <i class="fa fa-line-chart" aria-hidden="true"></i>
+                <i class="fa fa-book" aria-hidden="true"></i>
+                <i class="fa fa-rocket" aria-hidden="true"></i>
+                <i class="fa fa-comments" aria-hidden="true"></i>
+                <i class="fa fa-hashtag" aria-hidden="true"></i>
+                <i class="fa fa-gamepad" aria-hidden="true"></i>
+                <i class="fa fa-home" aria-hidden="true"></i>
+                <i class="fa fa-music" aria-hidden="true"></i>
+                <i class="fa fa-smile" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+                <i class="fa fa-wifi" aria-hidden="true"></i>
+                <i class="fa fa-video-camera" aria-hidden="true"></i>
+                <i class="fa fa-users" aria-hidden="true"></i>
+                <i class="fa fa-globe" aria-hidden="true"></i>
+                <i class="fa fa-tag" aria-hidden="true"></i>
+                <i class="fa fa-usd" aria-hidden="true"></i>
+                <i class="fa fa-trophy" aria-hidden="true"></i>
+            </div>
+        </div>
+        <div class = "row">
+            <div>                   
+                <i class="fa fa-battery-full" aria-hidden="true"></i>
+                <i class="fa fa-superscript" aria-hidden="true"></i>
+                <i class="fa fa-line-chart" aria-hidden="true"></i>
+                <i class="fa fa-book" aria-hidden="true"></i>
+                <i class="fa fa-rocket" aria-hidden="true"></i>
+                <i class="fa fa-comments" aria-hidden="true"></i>
+                <i class="fa fa-hashtag" aria-hidden="true"></i>
+                <i class="fa fa-gamepad" aria-hidden="true"></i>
+                <i class="fa fa-home" aria-hidden="true"></i>
+                <i class="fa fa-music" aria-hidden="true"></i>
+                <i class="fa fa-smile" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+                <i class="fa fa-wifi" aria-hidden="true"></i>
+                <i class="fa fa-video-camera" aria-hidden="true"></i>
+                <i class="fa fa-users" aria-hidden="true"></i>
+                <i class="fa fa-globe" aria-hidden="true"></i>
+                <i class="fa fa-tag" aria-hidden="true"></i>
+                <i class="fa fa-usd" aria-hidden="true"></i>
+                <i class="fa fa-trophy" aria-hidden="true"></i>
+            </div>
+            <div>                   
+                <i class="fa fa-battery-full" aria-hidden="true"></i>
+                <i class="fa fa-superscript" aria-hidden="true"></i>
+                <i class="fa fa-line-chart" aria-hidden="true"></i>
+                <i class="fa fa-book" aria-hidden="true"></i>
+                <i class="fa fa-rocket" aria-hidden="true"></i>
+                <i class="fa fa-comments" aria-hidden="true"></i>
+                <i class="fa fa-hashtag" aria-hidden="true"></i>
+                <i class="fa fa-gamepad" aria-hidden="true"></i>
+                <i class="fa fa-home" aria-hidden="true"></i>
+                <i class="fa fa-music" aria-hidden="true"></i>
+                <i class="fa fa-smile" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+                <i class="fa fa-wifi" aria-hidden="true"></i>
+                <i class="fa fa-video-camera" aria-hidden="true"></i>
+                <i class="fa fa-users" aria-hidden="true"></i>
+                <i class="fa fa-globe" aria-hidden="true"></i>
+                <i class="fa fa-tag" aria-hidden="true"></i>
+                <i class="fa fa-usd" aria-hidden="true"></i>
+                <i class="fa fa-trophy" aria-hidden="true"></i>
+            </div>
+        </div>
+        
+    </section>
+
+    <script type="module">
+    //----------------------------------FIREBASE CONFIG----------------------------------------//
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.10/firebase-app.js";
+        
+        const firebaseConfig = {
+            apiKey: "AIzaSyAbdNkCFGe5qJUK1Cz0A_DvAMVw2M8rT9w",
+            authDomain: "vezba-auth2-2ff1d.firebaseapp.com",
+            databaseURL: "https://vezba-auth2-2ff1d-default-rtdb.firebaseio.com",
+            projectId: "vezba-auth2-2ff1d",
+            storageBucket: "vezba-auth2-2ff1d.appspot.com",
+            messagingSenderId: "1059469808443",
+            appId: "1:1059469808443:web:ffd768806af4c16fd19d1e"
+        };
+
+    // Initialize Firebase
+    //----------------------------------THE REFRENECES----------------------------------------//
+        const app = initializeApp(firebaseConfig);
+        import { getDatabase, ref, set, child, get } 
+        from "https://www.gstatic.com/firebasejs/9.6.10/firebase-database.js";
+
+        const db = getDatabase();
+
+        const username = document.getElementById('userInp');
+        const pass = document.getElementById('passInp');
+        const submit = document.getElementById('sub_btn');
+
+    //------------------------------THE AUTHENTICATION PROCESS--------------------------------//
+        function AuthenticateUser(){
+            const dbref = ref(db);
+
+            get(child(dbref, "UsersList/" + username.value)).then((snapshot)=>{
+                    if(snapshot.exists()){
+                        let dbpass = decPass(snapshot.val().password);
+                        if(dbpass == pass.value){
+                            login(snapshot.val());
+                        }
+                        else {
+                            alert("User Does Not Exist");
+                        }
+                    }
+                    else{
+                        alert("Username Or Password Is Invalid");
+                    }
+                });
+        }
+
+    //-----------------------------------DECRIPTION----------------------------------//    
+        function decPass(dbpass){
+                var pass12 = CryptoJS.AES.decrypt(dbpass, pass.value);
+                return pass12.toString(CryptoJS.enc.Utf8); 
+            }
+
+    //-----------------------------------LOGIN----------------------------------//    
+    function login(user){
+        let keepLoggedIn = document.getElementById('customSwitch1').checked;
+
+        if(!keepLoggedIn){
+            sessionStorage.setItem('user', JSON.stringify(user));
+            window.location = "home.html";
+        }
+        else{
+            localStorage.setItem('keepLoggedIn', 'yes');
+            localStorage.setItem('user', JSON.stringify(user));
+            window.location = "home.html";
+        }
+    }
+
+    //-------------------------------ASSIGN THE EVENTS-------------------------------//
+    submit.addEventListener('click', AuthenticateUser);
+    </script>
+    
+</body>
+
+</html>
