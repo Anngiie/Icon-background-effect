@@ -1,34 +1,35 @@
 @font-face {
-  font-family:'Blogger';
+  font-family: "Blogger";
   src: url(BloggerSans.ttf);
 }
-*{
-  margin:0;
+* {
+  margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-body{
+body {
   overflow: hidden;
 }
-  /*BACKGROUND SETUP*/
-section{
+/*BACKGROUND SETUP*/
+section {
   width: 100%;
   height: 100vh;
   background: #111;
   flex-direction: column;
   overflow: hidden;
   display: flex;
-  align-items: center;}
-  
-.box{
+  align-items: center;
+}
+
+.box {
   width: 100vh;
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.header{
-   z-index: 2;
+.header {
+  z-index: 2;
   font-family: "Blogger";
   position: absolute;
   display: flex;
@@ -41,16 +42,16 @@ section{
   flex-direction: column;
   text-align: center;
 }
-h2{
+h2 {
   margin-top: -5%;
   font-size: 35px;
   padding-bottom: 20px;
 }
-h3{
+h3 {
   font-size: 30px;
   margin-bottom: 5px;
 }
-input{
+input {
   margin: 10px;
   height: 40px;
   width: 250px;
@@ -61,11 +62,11 @@ input{
   padding: 10px;
   border: 2px solid white;
 }
-input:focus{
+input:focus {
   outline: none;
 }
 
-button{
+button {
   margin-top: 25px;
   color: white;
   font-family: "Blogger";
@@ -78,21 +79,21 @@ button{
   border-radius: 10px;
   transition: 1s;
 }
-button:hover{
+button:hover {
   transition: 1s;
   box-shadow: 0 0 120px rgb(255, 119, 0);
 }
-a{
+a {
   color: white;
   text-decoration: none;
   transition: 1s;
 }
-a:hover{
+a:hover {
   transition: 1s;
   color: rgb(255, 149, 0);
   text-shadow: 0 10px 50px rgb(255, 119, 1);
 }
-input[type="checkbox"]{
+input[type="checkbox"] {
   position: relative;
   width: 30px;
   height: 30px;
@@ -102,26 +103,26 @@ input[type="checkbox"]{
   outline: none;
   cursor: pointer;
   border-radius: 50%;
-  transition: .2s;
+  transition: 0.2s;
 }
-input:checked[type="checkbox"]{
+input:checked[type="checkbox"] {
   background: rgb(255, 149, 0);
   border: 2.5px solid white;
-  transition: .5s;
+  transition: 0.5s;
 }
-.checkbox{
+.checkbox {
   margin-top: 25px;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
 }
-label{
+label {
   top: 50vh;
   width: 100%;
 }
 
-section .row{
+section .row {
   top: -60%;
   left: -10%;
   position: relative;
@@ -132,65 +133,65 @@ section .row{
   font-size: 64px;
   transform: rotate(-30deg);
 }
-i{
-  color: rgba(0,0,0,0.5);
+i {
+  color: rgba(0, 0, 0, 0.5);
   transition: 1s;
   padding: 0 5px;
   user-select: none;
   cursor: default;
 }
-i:hover{
+i:hover {
   transition: 0s;
   color: rgb(255, 149, 0);
   text-shadow: 0 0 120px rgb(255, 119, 0);
 }
 /*ANIMATION 1,2*/
-section .row div{
+section .row div {
   animation: animate1 80s linear infinite;
   animation-delay: -80s;
 }
-section .row div:nth-child(2){
+section .row div:nth-child(2) {
   animation: animate2 80s linear infinite;
   animation-delay: -40s;
 }
-@keyframes animate1{
-  0%{
+@keyframes animate1 {
+  0% {
     transform: translateX(100%);
   }
-  100%{
+  100% {
     transform: translateX(-100%);
   }
 }
-@keyframes animate2{
-  0%{
+@keyframes animate2 {
+  0% {
     transform: translateX(0%);
   }
-  100%{
+  100% {
     transform: translateX(-200%);
   }
 }
 /*ANIMATION 3,4*/
-section .row:nth-child(even) div{
+section .row:nth-child(even) div {
   animation: animate3 80s linear infinite;
   animation-delay: -80s;
 }
-section .row:nth-child(even) div:nth-child(2){
+section .row:nth-child(even) div:nth-child(2) {
   animation: animate4 80s linear infinite;
   animation-delay: -40s;
 }
-@keyframes animate3{
-  0%{
+@keyframes animate3 {
+  0% {
     transform: translateX(-100%);
   }
-  100%{
+  100% {
     transform: translateX(100%);
   }
 }
-@keyframes animate4{
-  0%{
+@keyframes animate4 {
+  0% {
     transform: translateX(-200%);
   }
-  100%{
+  100% {
     transform: translateX(0%);
   }
 }
